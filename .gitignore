@@ -1,0 +1,7 @@
+node_modules/
+.wrangler/
+.dev.vars
+.env
+*.workerwhisper-demo/
+wrangler.jsonc
+*.edgewhisper-demo/

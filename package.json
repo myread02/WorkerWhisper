@@ -1,0 +1,23 @@
+{
+  "name": "workerwhisper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "demo": "node --experimental-strip-types scripts/demo.mjs",
+    "check": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test test/*.test.*"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "latest",
+    "typescript": "latest",
+    "wrangler": "latest"
+  },
+  "description": "Self-hosted private audio transcription on Cloudflare Workers",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}

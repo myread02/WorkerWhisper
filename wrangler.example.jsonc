@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "workerwhisper",
+  "main": "src/index.ts",
+  "workers_dev": false,
+  "preview_urls": false,
+  "vars": {
+    "ACCESS_AUD": "workerwhisper-local",
+    "OWNER_EMAIL": "owner@example.com",
+    "DAILY_NEURON_CAP": "10000"
+  },
+  "access": { "dev": { "aud": "workerwhisper-local", "identity": { "email": "owner@example.com" } } },
+  "durable_objects": { "bindings": [{ "name": "BUDGET", "class_name": "DailyBudget" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["DailyBudget"] }],
+  "dev": { "ip": "127.0.0.1" },
+  "compatibility_date": "2026-09-16",
+  "ai": { "binding": "AI" },
+  "kv_namespaces": [
+    { "binding": "TRANSCRIPTS", "id": "your-kv-namespace-id" }
+  ]
+}
+
