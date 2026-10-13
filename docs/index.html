@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24372e">
+  <meta name="description" content="Turn recordings into readable transcripts with WorkerWhisper. Run your own workspace, save your conversations, and download the words worth keeping.">
+  <title>WorkerWhisper — Your words. Worth keeping.</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="alternate" hreflang="ja" href="index.ja.html">
+  <link rel="alternate" hreflang="zh-TW" href="index.zh-TW.html">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header>
+      <a class="brand" href="./" aria-label="WorkerWhisper home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>WorkerWhisper</a>
+      <nav aria-label="Main navigation"><a href="#experience">How it feels</a><a href="#questions">Good to know</a><a class="github-link" href="https://github.com/myread02/WorkerWhisper">GitHub <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <nav class="languages" aria-label="Website language"><a href="index.html" lang="en" hreflang="en" aria-current="page">English</a><a href="index.ja.html" lang="ja" hreflang="ja">日本語</a><a href="index.zh-TW.html" lang="zh-TW" hreflang="zh-TW">繁體中文</a></nav>
+    <main id="main">
+      <section class="hero" aria-labelledby="title">
+        <div class="hero-copy">
+          <p class="eyebrow">A quieter way to take notes</p>
+          <h1 id="title">Your words.<br><em>Worth keeping.</em></h1>
+          <p class="lead">Stay in the conversation. Come back to the words.</p>
+          <p class="intro">Turn your recordings into readable transcripts in a workspace you run yourself. For the meeting you want to revisit, the interview you want to quote, or the idea you didn’t want to lose.</p>
+          <div class="actions"><a class="button" href="https://github.com/myread02/WorkerWhisper#run">Set up your workspace <span aria-hidden="true">↗</span></a><a class="text-link" href="#experience">See how it works <span aria-hidden="true">↓</span></a></div>
+          <p class="setup-note">Open source · Bring your own Cloudflare account</p>
+        </div>
+        <figure class="preview" aria-labelledby="preview-caption">
+          <div class="preview-top"><span class="mini-brand">YOUR WORKSPACE</span><span class="status"><span aria-hidden="true">●</span> Saved</span></div>
+          <div class="recording"><span class="audio-icon" aria-hidden="true">♫</span><div><strong>One idea worth keeping.opus</strong><span>Conversation → transcript</span></div></div>
+          <div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="sample"><p class="eyebrow">The conversation, in words</p><p>“What if we made a little more room for the things people actually want to say?”</p><p>“That’s the part I want to remember. Let’s start there.”</p></div>
+          <div class="preview-bottom"><span>Ready to revisit</span><span>Transcript.txt <span aria-hidden="true">↓</span></span></div>
+          <figcaption id="preview-caption">An illustrative transcript. Your own recordings tell the story.</figcaption>
+        </figure>
+      </section>
+      <div class="ribbon"><span>Less replaying. More remembering.</span><span>Recordings in. Words to keep.</span></div>
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <div class="section-heading"><p class="eyebrow">From audio to something useful</p><h2 id="experience-title">One recording.<br>A little more clarity.</h2><p>No need to split a long recording by hand. Choose your file and follow along as the words arrive.</p></div>
+        <ol class="steps">
+          <li><span class="step-number">01</span><h3>Bring the conversation</h3><p>Choose an Ogg or Opus recording in your browser. Add its start time if you’d like that detail in your download.</p></li>
+          <li><span class="step-number">02</span><h3>Watch the words appear</h3><p>See progress, partial text, and an estimate of the time remaining while your recording is transcribed in manageable pieces.</p></li>
+          <li><span class="step-number">03</span><h3>Keep what was said</h3><p>Your complete transcript joins your saved history. Revisit it later or download a text file to read, edit, and share.</p></li>
+        </ol>
+      </section>
+      <section class="ownership" aria-labelledby="ownership-title">
+        <div><p class="eyebrow">Your own corner of the internet</p><h2 id="ownership-title">A workspace<br>that belongs to you.</h2><p>You run WorkerWhisper in your own Cloudflare account. You choose who can sign in, your transcripts stay in your workspace, and you set a daily transcription allowance.</p><a class="light-link" href="https://github.com/myread02/WorkerWhisper#configure-and-deploy">Read the setup guide <span aria-hidden="true">↗</span></a></div>
+        <ul class="benefits">
+          <li><h3>Come back to your words</h3><p>A saved archive keeps completed transcripts together, ready for the next time you need them.</p></li>
+          <li><h3>Pick up where you paused</h3><p>Keep the browser page open to retry after an interruption. For work across sessions, the command-line option saves your progress locally.</p></li>
+          <li><h3>Give your day a limit</h3><p>A daily allowance pauses new transcription when it’s used up. It helps manage this app’s usage; it isn’t a cap on your whole Cloudflare bill.</p></li>
+        </ul>
+      </section>
+      <section id="questions" class="section faq" aria-labelledby="questions-title">
+        <div class="section-heading"><p class="eyebrow">Before you begin</p><h2 id="questions-title">Good to know.</h2><p>A few practical details, so you know what to expect.</p></div>
+        <div class="questions">
+          <details open><summary>Can I start transcribing on this website?</summary><p>This is the introduction to WorkerWhisper. To transcribe, set up your own workspace using the <a href="https://github.com/myread02/WorkerWhisper#run">GitHub guide</a>. You’ll need a Cloudflare account and some comfort following technical setup instructions. There’s no shared hosted service.</p></details>
+          <details><summary>What happens to my audio?</summary><p>Your computer prepares the recording and sends small pieces to Cloudflare for transcription. WorkerWhisper saves the finished text, but does not store the uploaded audio in its transcript archive. Audio processing happens at Cloudflare, even when you run the app locally.</p></details>
+          <details><summary>Which recordings and languages can I use?</summary><p>Start with an Ogg or Opus file. Whisper large-v3-turbo supports multilingual transcription, including English, Japanese, Mandarin Chinese, Spanish, and French, plus many others. Language is detected automatically. Accuracy varies by language and recording; review important names, quotes, and mixed-language passages. Traditional Chinese output isn’t guaranteed. <a href="https://github.com/openai/whisper/blob/main/whisper/tokenizer.py">See Whisper’s supported languages</a>.</p></details>
+          <details><summary>Does it cost anything?</summary><p>The project is free to use under the MIT licence. You provide your own Cloudflare account and pay for its usage. Transcription can incur charges, and the daily app allowance does not limit every hosting charge. Follow the setup guide to protect your workspace before putting it online.</p></details>
+          <details><summary>What if a recording takes a while?</summary><p>Progress and time estimates help you follow longer recordings. Speed varies with your connection, audio, and Cloudflare’s processing load. Keep the browser page open while working; refreshing or closing it loses unfinished progress.</p></details>
+        </div>
+      </section>
+      <section class="closing" aria-labelledby="closing-title"><p class="eyebrow">Make room for the conversation</p><h2 id="closing-title">Keep the words.<br><em>Find your own thread.</em></h2><a class="button" href="https://github.com/myread02/WorkerWhisper">Explore WorkerWhisper on GitHub <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer><span>WorkerWhisper · Your words, worth keeping.</span><div><a href="https://github.com/myread02/WorkerWhisper">GitHub ↗</a><a href="https://github.com/myread02/WorkerWhisper/blob/main/LICENSE">MIT licence</a></div></footer>
+  </div>
+</body>
+</html>
